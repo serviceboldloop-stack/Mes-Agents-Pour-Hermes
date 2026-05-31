@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "review-v1",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8899", "--directory", "C:/Users/chapo/Videos/edit"],
+      "port": 8899
+    },
+    {
+      "name": "kairos-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/chapo/Documents/kairos"],
+      "port": 3000
+    }
+  ]
+}

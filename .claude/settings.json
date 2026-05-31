@@ -1,0 +1,29 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://localhost:4000",
+    "ANTHROPIC_AUTH_TOKEN": "sk-anything",
+    "ANTHROPIC_API_KEY": "sk-anything",
+    "ANTHROPIC_MODEL": "claude-proxy",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-proxy",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "claude-proxy"
+  },
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(Get-ChildItem -Path \"Outputs\" -Directory)",
+      "Bash(Sort-Object Name -Descending)",
+      "Bash(Select-Object -First 10)",
+      "Bash(ls -la \"C:\\\\Users\\\\chapo\\\\Documents\\\\01_Agent Personnaliser\\\\Agent Marketing V1\\\\\")",
+      "Read(//c/Users/chapo/Documents/01_Agent Personnaliser/**)",
+      "PowerShell(trimme Enregistrement\\\\2.mp4)",
+      "Bash(where trimme *)",
+      "Read(//c/Users/chapo/**)",
+      "PowerShell(ffmpeg -version)",
+      "PowerShell(echo $PROFILE)",
+      "PowerShell(New-Item -ItemType File -Path \"$PROFILE\" -Force)",
+      "PowerShell(. $PROFILE)",
+      "Bash(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 \"C:\\\\Users\\\\chapo\\\\Documents\\\\01_Agent Personnaliser\\\\Agent Marketing V1\\\\Enregistrement\\\\2.mp4\")",
+      "Bash(npx hyperframes *)"
+    ]
+  }
+}

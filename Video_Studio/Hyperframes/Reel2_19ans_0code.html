@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html
+  lang="fr"
+  data-composition-variables='[
+    {"id":"palette","type":"enum","label":"Color Palette","default":"dark-premium","options":[
+      {"value":"dark-premium","label":"Dark Premium"},
+      {"value":"clean-corporate","label":"Clean Corporate"},
+      {"value":"bold-energetic","label":"Bold Energetic"}
+    ]}
+  ]'
+>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reel 2 - 19 ans, 0 code</title>
+  </head>
+  <body>
+    <!-- Root composition container -->
+    <div
+      data-composition-id="reel2"
+      data-width="1080"
+      data-height="1920"
+      data-start="0"
+      data-duration="25.936"
+      data-track-index="0"
+    >
+      <!-- =============================================
+           BACKGROUND LAYER
+           ============================================= -->
+      <div
+        id="bg-layer"
+        data-start="0"
+        data-duration="25.936"
+        data-track-index="1"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+          z-index: 0;
+        "
+      ></div>
+
+      <!-- =============================================
+           VIDEO LAYER
+           ============================================= -->
+      <video
+        id="main-video"
+        src="../../Enregistrement/2.mp4"
+        data-start="0"
+        data-duration="25.936"
+        data-track-index="2"
+        muted
+        playsinline
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 1;
+        "
+      ></video>
+
+      <!-- =============================================
+           SUBTITLES LAYER (burned-in)
+           ============================================= -->
+      <div
+        id="subtitles-container"
+        data-start="0"
+        data-duration="25.936"
+        data-track-index="3"
+        style="
+          position: absolute;
+          bottom: 18%; /* Above Instagram dead zone */
+          left: 50%;
+          transform: translateX(-50%);
+          width: 90%;
+          max-width: 900px;
+          text-align: center;
+          z-index: 10;
+          pointer-events: none;
+        "
+      >
+        <!-- Subtitle lines will be dynamically positioned -->
+        <div
+          id="subtitle-1"
+          class="subtitle-line"
+          data-start="0.0"
+          data-duration="3.0"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.3;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+          "
+        >
+          J'ai 19 ans. Je n'ai jamais appris à coder.
+        </div>
+
+        <div
+          id="subtitle-2"
+          class="subtitle-line"
+          data-start="3.0"
+          data-duration="3.0"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.3;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+          "
+        >
+          Et pourtant, cet agent travaille pour moi
+        </div>
+
+        <div
+          id="subtitle-3"
+          class="subtitle-line"
+          data-start="6.0"
+          data-duration="3.0"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.3;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+          "
+        >
+          tous les jours.
+        </div>
+
+        <div
+          id="subtitle-4"
+          class="subtitle-line"
+          data-start="9.0"
+          data-duration="3.0"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.3;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+          "
+        >
+          J'entends souvent 'ouais mais moi je
+        </div>
+
+        <div
+          id="subtitle-5"
+          class="subtitle-line"
+          data-start="12.0"
+          data-duration="3.0"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.3;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+          "
+        >
+          comprennait pas l'IA'. Moi non plus
+        </div>
+
+        <div
+          id="subtitle-6"
+          class="subtitle-line"
+          data-start="15.0"
+          data-duration="3.0"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.3;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+          "
+        >
+          au départ je ne comprennait pas.
+        </div>
+
+        <div
+          id="subtitle-7"
+          class="subtitle-line"
+          data-start="18.0"
+          data-duration="3.0"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.3;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+          "
+        >
+          Ce que j'ai fait c'est configurer un
+        </div>
+
+        <div
+          id="subtitle-8"
+          class="subtitle-line"
+          data-start="21.0"
+          data-duration="3.0"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.3;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+          "
+        >
+          agent natif Claude une seule fois.
+        </div>
+
+        <div
+          id="subtitle-9"
+          class="subtitle-line"
+          data-start="24.0"
+          data-duration="1.936"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.4);
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.3;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+          "
+        >
+          Et maintenant il génère mon contenu,
+        </div>
+      </div>
+
+      <!-- =============================================
+           HOOK OVERLAY (0-3s)
+           ============================================= -->
+      <div
+        id="hook-overlay"
+        data-start="0.0"
+        data-duration="3.5"
+        data-track-index="4"
+        style="
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 85%;
+          text-align: center;
+          z-index: 11;
+          pointer-events: none;
+          opacity: 0;
+        "
+      >
+        J'ai 19 ans.<br>
+        Je n'ai jamais appris à coder. Et pourtant, cet agent travaille pour moi tous les jours.
+      </div>
+
+      <!-- =============================================
+           CONTEXT OVERLAYS (3-15s) - Sequential phrases
+           ============================================= -->
+      <div
+        id="context-overlay-1"
+        data-start="3.0"
+        data-duration="3.0"
+        data-track-index="5"
+        style="
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 85%;
+          text-align: center;
+          z-index: 11;
+          pointer-events: none;
+          opacity: 0;
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 1.4;
+          color: white;
+          text-shadow: 0 0 8px rgba(0,0,0,0.4);
+        "
+      >
+        Je comprends pas l'IA au départ
+      </div>
+
+      <div
+        id="context-overlay-2"
+        data-start="6.0"
+        data-duration="3.0"
+        data-track-index="5"
+        style="
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 85%;
+          text-align: center;
+          z-index: 11;
+          pointer-events: none;
+          opacity: 0;
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 1.4;
+          color: white;
+          text-shadow: 0 0 8px rgba(0,0,0,0.4);
+        "
+      >
+        Configurer agent Claude une fois
+      </div>
+
+      <div
+        id="context-overlay-3"
+        data-start="9.0"
+        data-duration="3.0"
+        data-track-index="5"
+        style="
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 85%;
+          text-align: center;
+          z-index: 11;
+          pointer-events: none;
+          opacity: 0;
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 1.4;
+          color: white;
+          text-shadow: 0 0 8px rgba(0,0,0,0.4);
+        "
+      >
+        Il génère mon contenu adapté
+      </div>
+
+      <div
+        id="context-overlay-4"
+        data-start="12.0"
+        data-duration="3.0"
+        data-track-index="5"
+        style="
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 85%;
+          text-align: center;
+          z-index: 11;
+          pointer-events: none;
+          opacity: 0;
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 1.4;
+          color: white;
+          text-shadow: 0 0 8px rgba(0,0,0,0.4);
+        "
+      >
+        Sans tout réexpliquer chaque fois
+      </div>
+
+      <!-- =============================================
+           AGENT LABEL (visible during demo)
+           ============================================= -->
+      <div
+        id="agent-label"
+        data-start="15.0"
+        data-duration="10.0"
+        data-track-index="6"
+        style="
+          position: absolute;
+          top: 12%;
+          left: 12%;
+          background: rgba(0,0,0,0.6);
+          color: white;
+          padding: 10px 18px;
+          border-radius: 25px;
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          font-weight: bold;
+          font-size: 22px;
+          z-index: 12;
+          pointer-events: none;
+          opacity: 0;
+        "
+      >
+        Agent TikTok IA
+      </div>
+
+      <!-- =============================================
+           CTA OVERLAY (38-48s) - adjusted for actual duration
+           ============================================= -->
+      <div
+        id="cta-overlay"
+        data-start="18.0"
+        data-duration="7.936"
+        data-track-index="7"
+        style="
+          position: absolute;
+          bottom: 22%; /* Above subtitle area */
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80%;
+          text-align: center;
+          z-index: 11;
+          pointer-events: none;
+          opacity: 0;
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 1.4;
+          color: white;
+          text-shadow: 0 0 8px rgba(0,0,0,0.4);
+        "
+      >
+        Commente AGENT et je te te le donne.
+      </div>
+
+      <!-- =============================================
+           DEAD ZONES VISUALIZATION (development only - remove in production)
+           ============================================= -->
+      <div
+        id="dead-zones"
+        data-start="0"
+        data-duration="25.936"
+        data-track-index="8"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 100;
+        "
+      >
+        <div
+          id="dead-zone-bottom"
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 12%; /* Instagram username area */
+            background: rgba(255,0,0,0.15);
+          "
+        ></div>
+        <div
+          id="dead-zone-right"
+          style="
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 12%; /* Instagram interaction buttons */
+            height: 100%;
+            background: rgba(255,0,0,0.15);
+          "
+        ></div>
+      </div>
+
+      <!-- =============================================
+           STYLES
+           ============================================= -->
+      <style>
+        /* Dynamic palette loading will be handled by script */
+        :root {
+          --bg-color: #0f172a;
+          --fg-color: #f8fafc;
+          --accent-color: #3b82f6;
+        }
+
+        /* Palette overrides */
+        [data-palette="dark-premium"] {
+          --bg-color: #0f172a;
+          --fg-color: #f8fafc;
+          --accent-color: #3b82f6;
+        }
+
+        [data-palette="clean-corporate"] {
+          --bg-color: #f8fafc;
+          --fg-color: #1e293b;
+          --accent-color: #64748b;
+        }
+
+        [data-palette="bold-energetic"] {
+          --bg-color: #1e293b;
+          --fg-color: #f8fafc;
+          --accent-color: #ef4444;
+        }
+
+        /* Apply palette */
+        body {
+          background-color: var(--bg-color);
+          color: var(--fg-color);
+        }
+
+        /* Text animations base styles */
+        .subtitle-line {
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          font-weight: bold;
+        }
+      </style>
+    </div>
+
+    <!-- =============================================
+         HYPERFRAMES CORE SCRIPT
+         ============================================= -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script>
+      // HyperFrames API - simplified for standalone composition
+      window.__hyperframes = {
+        getVariables: function() {
+          // In real HyperFrames, this would merge defaults/overrides
+          // For now, return defaults
+          return {
+            palette: "dark-premium"
+          };
+        },
+        fitTextFontSize: function(text, options) {
+          // Simplified - in real implementation this would calculate optimal font size
+          return 28; // default
+        }
+      };
+
+      // Timeline storage
+      window.__timelines = window.__timelines || {};
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const { palette } = window.__hyperframes.getVariables();
+        document.documentElement.setAttribute('data-palette', palette);
+
+        // Create main timeline
+        const tl = gsap.timeline({ paused: true });
+        window.__timelines["reel2"] = tl;
+
+        // =============================================
+        // SUBTITLE ANIMATIONS
+        // =============================================
+        const subtitleLines = [
+          { id: "subtitle-1", start: 0.0, end: 3.0 },
+          { id: "subtitle-2", start: 3.0, end: 6.0 },
+          { id: "subtitle-3", start: 6.0, end: 9.0 },
+          { id: "subtitle-4", start: 9.0, end: 12.0 },
+          { id: "subtitle-5", start: 12.0, end: 15.0 },
+          { id: "subtitle-6", start: 15.0, end: 18.0 },
+          { id: "subtitle-7", start: 18.0, end: 21.0 },
+          { id: "subtitle-8", start: 21.0, end: 24.0 },
+          { id: "subtitle-9", start: 24.0, end: 25.936 }
+        ];
+
+        subtitleLines.forEach(({ id, start, end }) => {
+          const el = document.getElementById(id);
+          if (!el) return;
+
+          // Fade in
+          tl.fromTo(
+            el,
+            { opacity: 0, y: 20 },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 0.4,
+              ease: "power3.out"
+            },
+            start
+          );
+
+          // Fade out
+          tl.to(
+            el,
+            { opacity: 0, y: -20 },
+            {
+              duration: 0.4,
+              ease: "power3.in"
+            },
+            end - 0.4
+          );
+        });
+
+        // =============================================
+        // HOOK OVERLAY (0-3.5s)
+        // =============================================
+        tl.fromTo(
+          "#hook-overlay",
+          { opacity: 0, y: -30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            ease: "power3.out"
+          },
+          0
+        );
+
+        tl.to(
+          "#hook-overlay",
+          { opacity: 0, y: -30 },
+          {
+            duration: 0.5,
+            ease: "power3.in"
+          },
+          3.5 - 0.5
+        );
+
+        // =============================================
+        // CONTEXT OVERLAYS (sequential)
+        // =============================================
+        const contextOverlays = [
+          { id: "context-overlay-1", start: 3.0 },
+          { id: "context-overlay-2", start: 6.0 },
+          { id: "context-overlay-3", start: 9.0 },
+          { id: "context-overlay-4", start: 12.0 }
+        ];
+
+        contextOverlays.forEach(({ id, start }) => {
+          const el = document.getElementById(id);
+          if (!el) return;
+
+          tl.fromTo(
+            el,
+            { opacity: 0, y: 20 },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 0.4,
+              ease: "power3.out"
+            },
+            start
+          );
+
+          tl.to(
+            el,
+            { opacity: 0, y: 20 },
+            {
+              duration: 0.4,
+              ease: "power3.in"
+            },
+            start + 2.6
+          );
+        });
+
+        // =============================================
+        // AGENT LABEL (appears during demo)
+        // =============================================
+        tl.fromTo(
+          "#agent-label",
+          { opacity: 0, scale: 0.8 },
+          {
+            opacity: 0.9,
+            scale: 1,
+            duration: 0.5,
+            ease: "power3.out"
+          },
+          15.0
+        );
+
+        tl.to(
+          "#agent-label",
+          { opacity: 0, scale: 0.8 },
+          {
+            duration: 0.5,
+            ease: "power3.in"
+          },
+          24.0
+        );
+
+        // =============================================
+        // CTA OVERLAY
+        // =============================================
+        tl.fromTo(
+          "#cta-overlay",
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            ease: "power3.out"
+          },
+          18.0
+        );
+
+        tl.to(
+          "#cta-overlay",
+          { opacity: 0, y: 30 },
+          {
+            duration: 0.5,
+            ease: "power3.in"
+          },
+          25.936 - 0.5
+        );
+
+        // =============================================
+        // BACKGROUND SUBTLE ANIMATION (breathing pulse)
+        // =============================================
+        tl.to(
+          "#bg-layer",
+          {
+            backgroundSize: "105% 105%",
+            duration: 8,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: -1
+          },
+          0
+        );
+
+        // =============================================
+        // VIDEO FADE-IN (smooth start)
+        // =============================================
+        tl.fromTo(
+          "#main-video",
+          { opacity: 0 },
+          { opacity: 1, duration: 0.8 },
+          0
+        );
+
+        // Register timeline
+        window.__timelines["reel2"] = tl;
+      });
+    </script>
+  </body>
+</html>

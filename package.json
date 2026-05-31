@@ -1,0 +1,17 @@
+{
+  "name": "kairos-agents",
+  "version": "1.0.0",
+  "description": "Kairos — Business Agents IA — Système de production de contenu",
+  "type": "module",
+  "scripts": {
+    "bot": "node telegram_bot.mjs",
+    "linkedin": "node linkedin_agent.mjs",
+    "veille": "node veille_matin.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.50.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
